@@ -1,9 +1,0 @@
-input:docs/pdf/arm/arm_corelink_cmn600ae_trm_101408_0101_06_en.md
-output:docs/quantum_memory/cmn600ae_memory.rst
-请将知识点转换为适合听的reStructedText格式的rst文件，要求：
-1. 每个知识点包含【问题】和【答案】两部分
-2. 问题简洁（≤30），答案详细但≤300字
-3. 答案中包含关键数据、记忆口诀或对比说明
-4. 用清晰的标点分隔，适合文本转语音播放
-5. 每个知识点之间空三行
-6. 问题和答案尽量用中文，专属英文词汇可以使用
