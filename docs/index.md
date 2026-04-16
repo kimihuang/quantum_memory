@@ -4,8 +4,8 @@
 
 ## 概述
 
-简要介绍项目内容...
+ARM SoC 内存子系统技术文档，涵盖 SMMU、CMN 等核心组件。
 
 ## 导航
 
-<!-- 在 mkdocs.yml 的 nav 中添加章节后，在此处更新链接 -->
+- [ARM SMMU 架构与设计](arm/smmu/SMMU_Architecture_and_Design.md)

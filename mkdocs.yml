@@ -32,6 +32,8 @@ theme:
 
 nav:
   - 首页: index.md
+  - ARM:
+    - SMMU 架构与设计: arm/smmu/SMMU_Architecture_and_Design.md
 
 markdown_extensions:
   - admonition
@@ -41,7 +43,11 @@ markdown_extensions:
   - tables
   - fenced_code
   - attr_list
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.details
 
 plugins:
