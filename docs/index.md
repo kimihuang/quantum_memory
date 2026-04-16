@@ -10,3 +10,4 @@ ARM SoC 内存子系统技术文档，涵盖 SMMU、CMN 等核心组件。
 
 - [ARM SMMU 架构与设计](arm/smmu/SMMU_Architecture_and_Design.md)
 - [ARM SMMU 虚拟化设计](arm/smmu/SMMU_Virtualization_Design.md)
+- [ARM SMMU SVN设计](arm/smmu/SMMU_SVA_Design.md)
