@@ -1,0 +1,49 @@
+site_name: Quantum Memory
+site_description: Quantum Memory 技术文档
+site_author: quantum_main
+site_url: ""
+
+repo_url: ""
+edit_uri: edit/main/docs/quantum_memory/docs/
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - 首页: index.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - attr_list
+  - pymdownx.superfences
+  - pymdownx.details
+
+plugins:
+  - search:
+      lang: zh
