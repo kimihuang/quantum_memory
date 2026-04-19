@@ -40,6 +40,8 @@ nav:
     - SMMU SVA 设计: arm/smmu/SMMU_SVA_Design.md
     - SMMU 虚拟化设计: arm/smmu/SMMU_Virtualization_Design.md
     - SMMUv3 多芯异构 SoC 设计: arm/smmu/SMMUv3_MultiDie_Heterogeneous_SoC_Design.md
+  - Packages:
+    - sort_app: src/packages/sort_app/README.md
 
 markdown_extensions:
   - admonition
