@@ -1,0 +1,1 @@
+/home/lion/workdir/sourcecode/quantum_main/src/spec_research/mpam/MPAM_SoC_IP_design_requirements.md
