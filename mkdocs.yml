@@ -48,6 +48,7 @@ nav:
     - elog_design: src/packages/embeded_logging/design.md
     - elog_integration_test_guide: src/packages/embeded_logging/integration_test_guide.md
     - elog_bug: src/packages/embeded_logging/bug.md
+    - google_esh_armv8A-64: src/packages/google_esh/examples/emulation/armv8A-64/README.md
 
 markdown_extensions:
   - admonition
