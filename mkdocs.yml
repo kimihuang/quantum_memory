@@ -52,8 +52,9 @@ nav:
   - spec_research:
     - mpam_research: src/spec_research/mpam/MPAM_research.md
     - mpam_ip_req: src/spec_research/mpam/MPAM_SoC_IP_design_requirements.md
-	- mpam_registers: src/spec_research/mpam/MPAM_SharedCache_Register_Design.md
-	- mpam_soft_design: src/spec_research/mpam/MPAM_Linux_Software_Design.md
+    - mpam_registers: src/spec_research/mpam/MPAM_SharedCache_Register_Design.md
+    - mpam_soft_design: src/spec_research/mpam/MPAM_Linux_Software_Design.md
+    - dmabuf_arch: src/spec_research/dmabuf/DMABUF_ARCHITECTURE.md
 
 markdown_extensions:
   - admonition
