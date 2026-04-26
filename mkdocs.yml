@@ -55,6 +55,7 @@ nav:
     - mpam_registers: src/spec_research/mpam/MPAM_SharedCache_Register_Design.md
     - mpam_soft_design: src/spec_research/mpam/MPAM_Linux_Software_Design.md
     - dmabuf_arch: src/spec_research/dmabuf/DMABUF_ARCHITECTURE.md
+    - dmabuf_arch: src/spec_research/dmabuf/DMABUF_PIPELINE_DESIGN.md
 
 markdown_extensions:
   - admonition
