@@ -1,0 +1,15 @@
+# 学习 Claude 代码
+
+- [readme](tools/learn-claude-code/README-zh.md)
+- [s01-the-agent-loop](tools/learn-claude-code/docs/zh/s01-the-agent-loop.md)
+- [s02-tool-use](tools/learn-claude-code/docs/zh/s02-tool-use.md)
+- [s03-todo-write](tools/learn-claude-code/docs/zh/s03-todo-write.md)
+- [s04-subagent](tools/learn-claude-code/docs/zh/s04-subagent.md)
+- [s05-skill-loading](tools/learn-claude-code/docs/zh/s05-skill-loading.md)
+- [s06-context-compact](tools/learn-claude-code/docs/zh/s06-context-compact.md)
+- [s07-task-system](tools/learn-claude-code/docs/zh/s07-task-system.md)
+- [s08-background-tasks](tools/learn-claude-code/docs/zh/s08-background-tasks.md)
+- [s09-agent-teams](tools/learn-claude-code/docs/zh/s09-agent-teams.md)
+- [s10-team-protocols](tools/learn-claude-code/docs/zh/s10-team-protocols.md)
+- [s11-autonomous-agents](tools/learn-claude-code/docs/zh/s11-autonomous-agents.md)
+- [s12-worktree-task-isolation](tools/learn-claude-code/docs/zh/s12-worktree-task-isolation.md)

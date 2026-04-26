@@ -22,6 +22,7 @@ ARM SoC 内存子系统技术文档，涵盖 SMMU、CMN 等核心组件。
 - [排序app](src/packages/sort_app/README.md)
 - [ramparser工具调试](src/packages/ramparser-LE.PRODUCT.2.6.r1-02600-QCS610.0/linux-ramdump-parser-v2/ramparse_debugging.md)
 
+
 ### 文档研究
 - [ARM SMMU 架构与设计](arm/smmu/SMMU_Architecture_and_Design.md)
 - [ARM SMMU 虚拟化设计](arm/smmu/SMMU_Virtualization_Design.md)
@@ -33,3 +34,4 @@ ARM SoC 内存子系统技术文档，涵盖 SMMU、CMN 等核心组件。
 - [MPAM软件设计](src/spec_research/mpam/MPAM_Linux_Software_Design.md)
 - [DMABUF架构](src/spec_research/dmabuf/DMABUF_ARCHITECTURE.md)
 - [DMABUF流水线设计](src/spec_research/dmabuf/DMABUF_PIPELINE_DESIGN.md)
+- [lark-cli操作指南](src/spec_research/lark-cli/lark-cli_operation_guide.md)

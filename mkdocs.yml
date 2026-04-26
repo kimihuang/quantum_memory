@@ -37,6 +37,8 @@ nav:
   - 首页: index.md
   - 写作指南:
     - Mermaid 图表引用: guide/mermaid_include.md
+  - 学习大模型:
+    - learn-cluade-code: learn-claude-code.md
 
 markdown_extensions:
   - admonition
