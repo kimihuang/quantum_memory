@@ -21,6 +21,12 @@ ARM SoC 内存子系统技术文档，涵盖 SMMU、CMN 等核心组件。
 - [linux-slt缺陷](src/packages/linux-slt/BUG.md)
 - [排序app](src/packages/sort_app/README.md)
 - [ramparser工具调试](src/packages/ramparser-LE.PRODUCT.2.6.r1-02600-QCS610.0/linux-ramdump-parser-v2/ramparse_debugging.md)
+- [demo_dmabuf 集成总结](src/packages/demo_dmabuf/INTEGRATION_SUMMARY.md)
+- [demo_dmabuf 集成测试](src/packages/demo_dmabuf/INTEGRATION_TEST.md)
+- [demo_dmabuf 缺陷](src/packages/demo_dmabuf/bug.md)
+- [boot_wrapper 设计](src/packages/boot-wrapper-aarch64/Design.md)
+- [boot_wrapper 集成测试](src/packages/boot-wrapper-aarch64/Debug.md)
+
 
 
 ### 文档研究
@@ -34,4 +40,5 @@ ARM SoC 内存子系统技术文档，涵盖 SMMU、CMN 等核心组件。
 - [MPAM软件设计](src/spec_research/mpam/MPAM_Linux_Software_Design.md)
 - [DMABUF架构](src/spec_research/dmabuf/DMABUF_ARCHITECTURE.md)
 - [DMABUF流水线设计](src/spec_research/dmabuf/DMABUF_PIPELINE_DESIGN.md)
+- [DMABUF QEMU 设计](src/spec_research/dmabuf/DMABUF_QEMU_DESIGN.md)
 - [lark-cli操作指南](src/spec_research/lark-cli/lark-cli_operation_guide.md)
