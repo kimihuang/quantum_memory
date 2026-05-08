@@ -41,4 +41,3 @@ ARM SoC 内存子系统技术文档，涵盖 SMMU、CMN 等核心组件。
 - [DMABUF架构](src/spec_research/dmabuf/DMABUF_ARCHITECTURE.md)
 - [DMABUF流水线设计](src/spec_research/dmabuf/DMABUF_PIPELINE_DESIGN.md)
 - [DMABUF QEMU 设计](src/spec_research/dmabuf/DMABUF_QEMU_DESIGN.md)
-- [lark-cli操作指南](src/spec_research/lark-cli/lark-cli_operation_guide.md)
