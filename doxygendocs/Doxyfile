@@ -1196,7 +1196,7 @@ INLINE_SOURCES         = NO
 # Fortran comments will always remain visible.
 # The default value is: YES.
 
-STRIP_CODE_COMMENTS    = YES
+STRIP_CODE_COMMENTS    = NO
 
 # If the REFERENCED_BY_RELATION tag is set to YES then for each documented
 # entity all documented functions referencing it will be listed.
@@ -1400,10 +1400,10 @@ HTML_STYLESHEET        =
 # documentation.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_STYLESHEET  = zephy_doxygen_style/doxygen-awesome.css \                                           
-                         zephy_doxygen_style/doxygen-awesome-sidebar-only.css \
-                         zephy_doxygen_style/doxygen-awesome-sidebar-only-darkmode-toggle.css \
-                         zephy_doxygen_style/doxygen-awesome-zephyr.css
+HTML_EXTRA_STYLESHEET  = zephyr_doxygen_style/doxygen-awesome.css \
+                         zephyr_doxygen_style/doxygen-awesome-sidebar-only.css \
+                         zephyr_doxygen_style/doxygen-awesome-sidebar-only-darkmode-toggle.css \
+                         zephyr_doxygen_style/doxygen-awesome-zephyr.css
 
 # The HTML_EXTRA_FILES tag can be used to specify one or more extra images or
 # other source files which should be copied to the HTML output directory. Note
@@ -2395,7 +2395,7 @@ ENABLE_PREPROCESSING   = YES
 # The default value is: NO.
 # This tag requires that the tag ENABLE_PREPROCESSING is set to YES.
 
-MACRO_EXPANSION        = NO
+MACRO_EXPANSION        = YES
 
 # If the EXPAND_ONLY_PREDEF and MACRO_EXPANSION tags are both set to YES then
 # the macro expansion is limited to the macros specified with the PREDEFINED and
@@ -2403,7 +2403,7 @@ MACRO_EXPANSION        = NO
 # The default value is: NO.
 # This tag requires that the tag ENABLE_PREPROCESSING is set to YES.
 
-EXPAND_ONLY_PREDEF     = NO
+EXPAND_ONLY_PREDEF     = YES
 
 # If the SEARCH_INCLUDES tag is set to YES, the include files in the
 # INCLUDE_PATH will be searched if a #include is found.
@@ -2436,9 +2436,305 @@ INCLUDE_FILE_PATTERNS  =
 # recursively expanded use the := operator instead of the = operator.
 # This tag requires that the tag ENABLE_PREPROCESSING is set to YES.
 
-PREDEFINED             =
-
-# If the MACRO_EXPANSION and EXPAND_ONLY_PREDEF tags are set to YES then this
+PREDEFINED             = CONFIG_DT_HAS_ARM_ARMV7M_SYSTICK_ENABLED \
+                         CONFIG_DT_HAS_ARM_CORTEX_M3_ENABLED \
+                         CONFIG_DT_HAS_ARM_V7M_NVIC_ENABLED \
+                         CONFIG_DT_HAS_FIXED_CLOCK_ENABLED \
+                         CONFIG_DT_HAS_MMIO_SRAM_ENABLED \
+                         CONFIG_DT_HAS_SOC_NV_FLASH_ENABLED \
+                         CONFIG_DT_HAS_TI_STELLARIS_ETHERNET_ENABLED \
+                         CONFIG_DT_HAS_TI_STELLARIS_FLASH_CONTROLLER_ENABLED \
+                         CONFIG_DT_HAS_TI_STELLARIS_GPIO_ENABLED \
+                         CONFIG_DT_HAS_TI_STELLARIS_UART_ENABLED \
+                         CONFIG_DT_HAS_ZEPHYR_BT_HCI_UART_ENABLED \
+                         CONFIG_MAIN_STACK_SIZE=1024 \
+                         CONFIG_SYSTEM_WORKQUEUE_STACK_SIZE=1024 \
+                         CONFIG_SERIAL \
+                         CONFIG_NUM_IRQS=43 \
+                         CONFIG_SYS_CLOCK_HW_CYCLES_PER_SEC=12000000 \
+                         CONFIG_FLASH_SIZE=256 \
+                         CONFIG_FLASH_BASE_ADDRESS=0x0 \
+                         CONFIG_MP_MAX_NUM_CPUS=1 \
+                         CONFIG_DCACHE_LINE_SIZE=32 \
+                         CONFIG_ICACHE_LINE_SIZE=32 \
+                         CONFIG_IDLE_STACK_SIZE=256 \
+                         CONFIG_ISR_STACK_SIZE=2048 \
+                         CONFIG_SYS_CLOCK_TICKS_PER_SEC=100 \
+                         CONFIG_ROM_START_OFFSET=0 \
+                         CONFIG_UART_STELLARIS_PORT_0 \
+                         CONFIG_UART_STELLARIS_PORT_1 \
+                         CONFIG_UART_STELLARIS_PORT_2 \
+                         CONFIG_KERNEL_ENTRY="__start" \
+                         CONFIG_XIP \
+                         CONFIG_HAS_FLASH_LOAD_OFFSET \
+                         CONFIG_PM \
+                         CONFIG_TICKLESS_KERNEL \
+                         CONFIG_CORTEX_M_SYSTICK \
+                         CONFIG_NUM_METAIRQ_PRIORITIES=0 \
+                         CONFIG_NUM_PREEMPT_PRIORITIES=15 \
+                         CONFIG_GEN_IRQ_VECTOR_TABLE \
+                         CONFIG_GEN_ISR_TABLES \
+                         CONFIG_TIMESLICE_SIZE=20 \
+                         CONFIG_FLASH_LOAD_OFFSET=0 \
+                         CONFIG_SYS_CLOCK_EXISTS \
+                         CONFIG_ARCH_SW_ISR_TABLE_ALIGN=4 \
+                         CONFIG_UART_USE_RUNTIME_CONFIGURE \
+                         CONFIG_CONSOLE \
+                         CONFIG_COMMON_LIBC_MALLOC_ARENA_SIZE=-1 \
+                         CONFIG_GEN_SW_ISR_TABLE \
+                         CONFIG_GEN_IRQ_START_VECTOR=0 \
+                         CONFIG_SRAM_OFFSET=0 \
+                         CONFIG_ARCH_IRQ_VECTOR_TABLE_ALIGN=4 \
+                         CONFIG_ISR_TABLES_LOCAL_DECLARATION_SUPPORTED \
+                         CONFIG_KERNEL_MEM_POOL \
+                         CONFIG_MULTITHREADING \
+                         CONFIG_LINKER_USE_RELAX \
+                         CONFIG_ZEPHYR_ACPICA_MODULE \
+                         CONFIG_ZEPHYR_CMSIS_MODULE \
+                         CONFIG_HAS_CMSIS_CORE \
+                         CONFIG_ZEPHYR_CMSIS_DSP_MODULE \
+                         CONFIG_ZEPHYR_CMSIS_NN_MODULE \
+                         CONFIG_ZEPHYR_CMSIS_6_MODULE \
+                         CONFIG_HAS_CMSIS_CORE_M \
+                         CONFIG_ZEPHYR_DHARA_MODULE \
+                         CONFIG_ZEPHYR_FATFS_MODULE \
+                         CONFIG_ZEPHYR_ADI_MODULE \
+                         CONFIG_ZEPHYR_HAL_AFBR_MODULE \
+                         CONFIG_ZEPHYR_HAL_AMBIQ_MODULE \
+                         CONFIG_ZEPHYR_ATMEL_MODULE \
+                         CONFIG_ZEPHYR_HAL_BOUFFALOLAB_MODULE \
+                         CONFIG_ZEPHYR_HAL_ESPRESSIF_MODULE \
+                         CONFIG_ZEPHYR_HAL_ETHOS_U_MODULE \
+                         CONFIG_ZEPHYR_HAL_GIGADEVICE_MODULE \
+                         CONFIG_ZEPHYR_HAL_INFINEON_MODULE \
+                         CONFIG_ZEPHYR_HAL_INTEL_MODULE \
+                         CONFIG_ZEPHYR_MICROCHIP_MODULE \
+                         CONFIG_ZEPHYR_HAL_NORDIC_MODULE \
+                         CONFIG_ZEPHYR_NUVOTON_MODULE \
+                         CONFIG_ZEPHYR_HAL_NXP_MODULE \
+                         CONFIG_ZEPHYR_OPENISA_MODULE \
+                         CONFIG_ZEPHYR_QUICKLOGIC_MODULE \
+                         CONFIG_ZEPHYR_HAL_REALTEK_MODULE \
+                         CONFIG_ZEPHYR_HAL_RENESAS_MODULE \
+                         CONFIG_ZEPHYR_HAL_RPI_PICO_MODULE \
+                         CONFIG_ZEPHYR_HAL_SIFLI_MODULE \
+                         CONFIG_ZEPHYR_HAL_SILABS_MODULE \
+                         CONFIG_ZEPHYR_HAL_ST_MODULE \
+                         CONFIG_ZEPHYR_HAL_STM32_MODULE \
+                         CONFIG_ZEPHYR_HAL_TDK_MODULE \
+                         CONFIG_ZEPHYR_HAL_TELINK_MODULE \
+                         CONFIG_ZEPHYR_TI_MODULE \
+                         CONFIG_ZEPHYR_HAL_WCH_MODULE \
+                         CONFIG_ZEPHYR_HAL_WURTHELEKTRONIK_MODULE \
+                         CONFIG_ZEPHYR_XTENSA_MODULE \
+                         CONFIG_ZEPHYR_HOSTAP_MODULE \
+                         CONFIG_ZEPHYR_LIBLC3_MODULE \
+                         CONFIG_ZEPHYR_LIBMCTP_MODULE \
+                         CONFIG_ZEPHYR_LIBMETAL_MODULE \
+                         CONFIG_ZEPHYR_LIBSBC_MODULE \
+                         CONFIG_ZEPHYR_LITTLEFS_MODULE \
+                         CONFIG_ZEPHYR_LORA_BASICS_MODEM_MODULE \
+                         CONFIG_ZEPHYR_LORAMAC_NODE_MODULE \
+                         CONFIG_ZEPHYR_LVGL_MODULE \
+                         CONFIG_ZEPHYR_MBEDTLS_MODULE \
+                         CONFIG_MBEDTLS_VERSION_4_x \
+                         CONFIG_ZEPHYR_MBEDTLS_3_6_MODULE \
+                         CONFIG_ZEPHYR_MCUBOOT_MODULE \
+                         CONFIG_ZEPHYR_MIPI_SYS_T_MODULE \
+                         CONFIG_ZEPHYR_MLDSA_NATIVE_MODULE \
+                         CONFIG_ZEPHYR_NANOPB_MODULE \
+                         CONFIG_ZEPHYR_NRF_WIFI_MODULE \
+                         CONFIG_ZEPHYR_OPEN_AMP_MODULE \
+                         CONFIG_ZEPHYR_OPENTHREAD_MODULE \
+                         CONFIG_ZEPHYR_PERCEPIO_MODULE \
+                         CONFIG_ZEPHYR_PICOLIBC_MODULE \
+                         CONFIG_ZEPHYR_PSA_ARCH_TESTS_MODULE \
+                         CONFIG_ZEPHYR_SEGGER_MODULE \
+                         CONFIG_ZEPHYR_TF_M_TESTS_MODULE \
+                         CONFIG_ZEPHYR_TF_PSA_CRYPTO_MODULE \
+                         CONFIG_ZEPHYR_TRUSTED_FIRMWARE_A_MODULE \
+                         CONFIG_ZEPHYR_TRUSTED_FIRMWARE_M_MODULE \
+                         CONFIG_ZEPHYR_UOSCORE_UEDHOC_MODULE \
+                         CONFIG_ZEPHYR_ZCBOR_MODULE \
+                         CONFIG_ZEPHYR_NRF_HW_MODELS_MODULE \
+                         CONFIG_BOARD="qemu_cortex_m3" \
+                         CONFIG_BOARD_REVISION="" \
+                         CONFIG_BOARD_TARGET="qemu_cortex_m3/ti_lm3s6965" \
+                         CONFIG_QEMU_TARGET \
+                         CONFIG_BOARD_QEMU_CORTEX_M3 \
+                         CONFIG_BOARD_QEMU_CORTEX_M3_TI_LM3S6965 \
+                         CONFIG_BOARD_QUALIFIERS="ti_lm3s6965" \
+                         CONFIG_QEMU_ICOUNT \
+                         CONFIG_QEMU_ICOUNT_SHIFT=6 \
+                         CONFIG_QEMU_GDBSERVER_LISTEN_DEV="tcp::1234" \
+                         CONFIG_QEMU_EXTRA_FLAGS="" \
+                         CONFIG_SOC="ti_lm3s6965" \
+                         CONFIG_SOC_TI_LM3S6965 \
+                         CONFIG_SOC_TI_LM3S6965_QEMU \
+                         CONFIG_ARCH="arm" \
+                         CONFIG_ARCH_HAS_SINGLE_THREAD_SUPPORT \
+                         CONFIG_CPU_CORTEX \
+                         CONFIG_CPU_CORTEX_M \
+                         CONFIG_ISA_THUMB2 \
+                         CONFIG_ASSEMBLER_ISA_THUMB2 \
+                         CONFIG_COMPILER_ISA_THUMB2 \
+                         CONFIG_STACK_ALIGN_DOUBLE_WORD \
+                         CONFIG_FAULT_DUMP=2 \
+                         CONFIG_FP16 \
+                         CONFIG_FP16_IEEE \
+                         CONFIG_CPU_CORTEX_M3 \
+                         CONFIG_CPU_CORTEX_M_HAS_SYSTICK \
+                         CONFIG_CPU_CORTEX_M_HAS_DWT \
+                         CONFIG_CPU_CORTEX_M_HAS_BASEPRI \
+                         CONFIG_CPU_CORTEX_M_HAS_VTOR \
+                         CONFIG_CPU_CORTEX_M_HAS_PROGRAMMABLE_FAULT_PRIOS \
+                         CONFIG_ARMV7_M_ARMV8_M_MAINLINE \
+                         CONFIG_NULL_POINTER_EXCEPTION_DETECTION_NONE \
+                         CONFIG_ARM \
+                         CONFIG_ARCH_IS_SET \
+                         CONFIG_ARCH_SUPPORTS_ROM_OFFSET \
+                         CONFIG_LITTLE_ENDIAN \
+                         CONFIG_SRAM_SIZE=64 \
+                         CONFIG_SRAM_BASE_ADDRESS=0x20000000 \
+                         CONFIG_GEN_PRIV_STACKS \
+                         CONFIG_ARCH_DEVICE_STATE_ALIGN=4 \
+                         CONFIG_IRQ_VECTOR_TABLE_JUMP_BY_ADDRESS \
+                         CONFIG_GEN_SW_ISR_TABLE_ARRAY \
+                         CONFIG_EXCEPTION_DEBUG \
+                         CONFIG_ARCH_HAS_TIMING_FUNCTIONS \
+                         CONFIG_ARCH_HAS_RAMFUNC_SUPPORT \
+                         CONFIG_ARCH_HAS_VECTOR_TABLE_RELOCATION \
+                         CONFIG_ARCH_HAS_NESTED_EXCEPTION_DETECTION \
+                         CONFIG_ARCH_SUPPORTS_COREDUMP \
+                         CONFIG_ARCH_SUPPORTS_COREDUMP_THREADS \
+                         CONFIG_ARCH_SUPPORTS_COREDUMP_STACK_PTR \
+                         CONFIG_ARCH_SUPPORTS_ARCH_HW_INIT \
+                         CONFIG_ARCH_SUPPORTS_ROM_START \
+                         CONFIG_ARCH_HAS_EXTRA_EXCEPTION_INFO \
+                         CONFIG_ARCH_HAS_THREAD_LOCAL_STORAGE \
+                         CONFIG_ARCH_HAS_SUSPEND_TO_RAM \
+                         CONFIG_ARCH_HAS_THREAD_ABORT \
+                         CONFIG_ARCH_HAS_CODE_DATA_RELOCATION \
+                         CONFIG_TOOLCHAIN_HAS_BUILTIN_FFS \
+                         CONFIG_ARCH_HAS_CUSTOM_SWAP_TO_MAIN \
+                         CONFIG_NUM_COOP_PRIORITIES=16 \
+                         CONFIG_MAIN_THREAD_PRIORITY=0 \
+                         CONFIG_COOP_ENABLED \
+                         CONFIG_PREEMPT_ENABLED \
+                         CONFIG_PRIORITY_CEILING=-128 \
+                         CONFIG_SCHED_MULTIQ \
+                         CONFIG_WAITQ_SIMPLE \
+                         CONFIG_LIBC_ERRNO \
+                         CONFIG_ERRNO \
+                         CONFIG_CURRENT_THREAD_USE_TLS \
+                         CONFIG_SYSTEM_WORKQUEUE_PRIORITY=-1 \
+                         CONFIG_SYSTEM_WORKQUEUE_WORK_TIMEOUT_MS=0 \
+                         CONFIG_BARRIER_OPERATIONS_ARCH \
+                         CONFIG_ATOMIC_OPERATIONS_BUILTIN \
+                         CONFIG_TIMESLICING \
+                         CONFIG_TIMESLICE_PRIORITY=0 \
+                         CONFIG_NUM_MBOX_ASYNC_MSGS=10 \
+                         CONFIG_HEAP_MEM_POOL_SIZE=0 \
+                         CONFIG_SWAP_NONATOMIC \
+                         CONFIG_TIMEOUT_64BIT \
+                         CONFIG_SYS_CLOCK_MAX_TIMEOUT_DAYS=365 \
+                         CONFIG_USE_SWITCH_SUPPORTED \
+                         CONFIG_TOOLCHAIN_SUPPORTS_THREAD_LOCAL_STORAGE \
+                         CONFIG_THREAD_LOCAL_STORAGE \
+                         CONFIG_TOOLCHAIN_SUPPORTS_STATIC_INIT_GNU \
+                         CONFIG_KERNEL_INIT_PRIORITY_OBJECTS=30 \
+                         CONFIG_KERNEL_INIT_PRIORITY_LIBC=35 \
+                         CONFIG_KERNEL_INIT_PRIORITY_DEFAULT=40 \
+                         CONFIG_KERNEL_INIT_PRIORITY_DEVICE=50 \
+                         CONFIG_APPLICATION_INIT_PRIORITY=90 \
+                         CONFIG_CONSOLE_INPUT_MAX_LINE_LEN=128 \
+                         CONFIG_CONSOLE_HAS_DRIVER \
+                         CONFIG_CONSOLE_INIT_PRIORITY=60 \
+                         CONFIG_UART_CONSOLE \
+                         CONFIG_INTC_INIT_PRIORITY=40 \
+                         CONFIG_SERIAL_HAS_DRIVER \
+                         CONFIG_SERIAL_SUPPORT_INTERRUPT \
+                         CONFIG_SERIAL_INIT_PRIORITY=50 \
+                         CONFIG_UART_STELLARIS \
+                         CONFIG_SYSTEM_CLOCK_INIT_PRIORITY=0 \
+                         CONFIG_TICKLESS_CAPABLE \
+                         CONFIG_SYSTEM_TIMER_HAS_DISABLE_SUPPORT \
+                         CONFIG_CORTEX_M_SYSTICK_INSTALL_ISR \
+                         CONFIG_SYSTEM_TIMER_HAS_LPM_COMPANION_SUPPORT \
+                         CONFIG_SYSTEM_TIMER_LPM_COMPANION_NONE \
+                         CONFIG_FULL_LIBC_SUPPORTED \
+                         CONFIG_MINIMAL_LIBC_SUPPORTED \
+                         CONFIG_PICOLIBC_SUPPORTED \
+                         CONFIG_PICOLIBC \
+                         CONFIG_COMMON_LIBC_ABORT \
+                         CONFIG_COMMON_LIBC_TIME \
+                         CONFIG_COMMON_LIBC_MALLOC \
+                         CONFIG_COMMON_LIBC_CALLOC \
+                         CONFIG_COMMON_LIBC_REALLOCARRAY \
+                         CONFIG_PICOLIBC_USE_TOOLCHAIN \
+                         CONFIG_PICOLIBC_IO_LONG_LONG \
+                         CONFIG_STDOUT_CONSOLE \
+                         CONFIG_NEED_LIBC_MEM_PARTITION \
+                         CONFIG_SYS_HEAP_ALLOC_LOOPS=3 \
+                         CONFIG_SYS_HEAP_ARRAY_SIZE=0 \
+                         CONFIG_SYS_HEAP_HARDENING_BASIC \
+                         CONFIG_SYS_HEAP_HARDENING_LEVEL=1 \
+                         CONFIG_SYS_HEAP_SMALL_ONLY \
+                         CONFIG_BOOT_BANNER \
+                         CONFIG_BOOT_BANNER_STRING="Booting Zephyr OS build" \
+                         CONFIG_BOOT_DELAY=0 \
+                         CONFIG_CBPRINTF_COMPLETE \
+                         CONFIG_CBPRINTF_FULL_INTEGRAL \
+                         CONFIG_CBPRINTF_CONVERT_CHECK_PTR \
+                         CONFIG_LIBGCC_RTLIB \
+                         CONFIG_RING_BUFFER \
+                         CONFIG_GETOPT \
+                         CONFIG_TIMEUTIL_APPLY_SKEW \
+                         CONFIG_PRINTK \
+                         CONFIG_EARLY_CONSOLE \
+                         CONFIG_ASSERT_VERBOSE \
+                         CONFIG_OPENAMP_VRING_ALIGNMENT=16 \
+                         CONFIG_POSIX_AEP_CHOICE_ZEPHYR \
+                         CONFIG_TC_PROVIDES_POSIX_C_LANG_SUPPORT_R \
+                         CONFIG_POSIX_C_LANG_SUPPORT_R \
+                         CONFIG_POSIX_C_LIB_EXT \
+                         CONFIG_TIMER_RANDOM_INITIAL_STATE=123456789 \
+                         CONFIG_COVERAGE_DUMP_PATH_EXCLUDE="" \
+                         CONFIG_TOOLCHAIN_ZEPHYR_1_0 \
+                         CONFIG_TOOLCHAIN_ZEPHYR_SUPPORTS_THREAD_LOCAL_STORAGE \
+                         CONFIG_TOOLCHAIN_ZEPHYR_SUPPORTS_GNU_EXTENSIONS \
+                         CONFIG_PICOLIBC_DEFAULT \
+                         CONFIG_LINKER_ORPHAN_SECTION_WARN \
+                         CONFIG_FLASH_LOAD_SIZE=0 \
+                         CONFIG_ROM_END_OFFSET=0 \
+                         CONFIG_LD_LINKER_SCRIPT_SUPPORTED \
+                         CONFIG_LD_LINKER_TEMPLATE \
+                         CONFIG_LINKER_SORT_BY_ALIGNMENT \
+                         CONFIG_LINKER_GENERIC_SECTIONS_PRESENT_AT_BOOT \
+                         CONFIG_LINKER_LAST_SECTION_ID \
+                         CONFIG_LINKER_LAST_SECTION_ID_PATTERN=0xE015E015 \
+                         CONFIG_LINKER_ITERABLE_SUBALIGN=4 \
+                         CONFIG_LINKER_DEVNULL_SUPPORT \
+                         CONFIG_STD_C17 \
+                         CONFIG_TOOLCHAIN_SUPPORTS_GNU_EXTENSIONS \
+                         CONFIG_SIZE_OPTIMIZATIONS \
+                         CONFIG_COMPILER_TRACK_MACRO_EXPANSION \
+                         CONFIG_COMPILER_COLOR_DIAGNOSTICS \
+                         CONFIG_FORTIFY_SOURCE_COMPILE_TIME \
+                         CONFIG_COMPILER_OPT="" \
+                         CONFIG_TOOLCHAIN_SUPPORTS_VLA_IN_STATEMENTS \
+                         CONFIG_TOOLCHAIN_SUPPORTS_VARIABLE_CLEANUP_ATTRIBUTE \
+                         CONFIG_COMPILER_CODEGEN_VLIW_AUTO \
+                         CONFIG_RUNTIME_ERROR_CHECKS \
+                         CONFIG_KERNEL_BIN_NAME="zephyr" \
+                         CONFIG_OUTPUT_STAT \
+                         CONFIG_OUTPUT_PRINT_MEMORY_USAGE \
+                         CONFIG_BUILD_GAP_FILL_PATTERN=0xFF \
+                         CONFIG_BUILD_OUTPUT_STRIP_PATHS \
+                         CONFIG_CHECK_INIT_PRIORITIES \
+                         CONFIG_WARN_DEPRECATED \
+                         CONFIG_ENFORCE_ZEPHYR_STDINT \
+                         CONFIG_LEGACY_GENERATED_INCLUDE_PATH
 # tag can be used to specify a list of macro names that should be expanded. The
 # macro definition that is found in the sources will be used. Use the PREDEFINED
 # tag if you want to use a different macro definition that overrules the
@@ -2520,7 +2816,7 @@ HIDE_UNDOC_RELATIONS   = YES
 # set to NO
 # The default value is: YES.
 
-HAVE_DOT               = YES
+HAVE_DOT               = NO
 
 # The DOT_NUM_THREADS specifies the number of dot invocations doxygen is allowed
 # to run in parallel. When set to 0 doxygen will base this on the number of
