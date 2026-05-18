@@ -30,14 +30,8 @@ ARM SoC 内存子系统技术文档，涵盖 SMMU、CMN 等核心组件。
 
 
 ### 文档研究
-- [ARM SMMU 架构与设计](arm/smmu/SMMU_Architecture_and_Design.md)
-- [ARM SMMU 虚拟化设计](arm/smmu/SMMU_Virtualization_Design.md)
-- [ARM SMMU SVN设计](arm/smmu/SMMU_SVA_Design.md)
-- [ARM SMMU 异构设计](arm/smmu/SMMUv3_MultiDie_Heterogeneous_SoC_Design.md)
-- [MPAM研究](src/spec_research/mpam/MPAM_research.md)
-- [MPAM IP需求](src/spec_research/mpam/MPAM_SoC_IP_design_requirements.md)
-- [MPAM寄存器设计](src/spec_research/mpam/MPAM_SharedCache_Register_Design.md)
-- [MPAM软件设计](src/spec_research/mpam/MPAM_Linux_Software_Design.md)
 - [DMABUF架构](src/spec_research/dmabuf/DMABUF_ARCHITECTURE.md)
 - [DMABUF流水线设计](src/spec_research/dmabuf/DMABUF_PIPELINE_DESIGN.md)
 - [DMABUF QEMU 设计](src/spec_research/dmabuf/DMABUF_QEMU_DESIGN.md)
+- [atf bl1启动流程分析](src/spec_research/atf/bl1_boot_flow.md)
+- [atf bl1 map文件分析](src/spec_research/atf/bl1_map_analysis.md)

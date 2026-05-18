@@ -41,6 +41,7 @@ nav:
     - learn-cluade-code: learn-claude-code.md
   - cli操作指南:
     - cli列表: cli_index.md
+  - arm技术文档: arm_index.md
   - zephyr:
     - 功能列表: zephyr_index.md
   - API参考 (zephyr): doxygen/index.html
